@@ -13,7 +13,6 @@
 	"types": "build/index.d.ts",
 	"scripts": {
 		"build": "tsc",
-		"prepare": "npm run build",
 		"increment": "npm version v$(semver --increment $(npm show @tonejs/piano version)) --git-tag-version=false --allow-same-version",
 		"lint": "tslint --project tsconfig.json --fix",
 		"test": "karma start test/karma.conf.js",
