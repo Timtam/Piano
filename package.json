@@ -16,8 +16,7 @@
 		"increment": "npm version v$(semver --increment $(npm show @tonejs/piano version)) --git-tag-version=false --allow-same-version",
 		"lint": "tslint --project tsconfig.json --fix",
 		"test": "karma start test/karma.conf.js",
-		"watch": "tsc --watch",
-		"postinstall": "tsc --outDir ./build"
+		"watch": "tsc --watch"
 	},
 	"files": [
 		"README.md",
