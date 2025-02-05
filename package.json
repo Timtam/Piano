@@ -5,19 +5,20 @@
 	"repository": {
 		"url": "https://github.com/tambien/Piano"
 	},
-	"browser": "build/Piano.js",
-	"main": "build/esm/Piano.js",
-	"module": "build/esm/Piano.js",
+	"browser": "build/index.js",
+	"main": "build/index.js",
+	"module": "build/index.js",
 	"type": "module",
-	"unpkg": "build/Piano.js",
-	"types": "build/esm/Piano.d.ts",
+	"unpkg": "build/index.js",
+	"types": "build/index.d.ts",
 	"scripts": {
 		"build": "tsc",
 		"prepare": "npm run build",
 		"increment": "npm version v$(semver --increment $(npm show @tonejs/piano version)) --git-tag-version=false --allow-same-version",
 		"lint": "tslint --project tsconfig.json --fix",
 		"test": "karma start test/karma.conf.js",
-		"watch": "tsc --watch"
+		"watch": "tsc --watch",
+		"postinstall": "tsc --outDir ./build"
 	},
 	"files": [
 		"README.md",
