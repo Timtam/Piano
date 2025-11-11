@@ -4,10 +4,10 @@ export function getReleasesUrl(midi) {
     return `rel${midi - 20}.ogg`;
 }
 export function getHarmonicsUrl(midi) {
-    return `harmS${midiToNote(midi).replace('#', 's')}.[mp3|ogg]`;
+    return `harmS${midiToNote(midi).replace('#', 's')}.ogg`;
 }
 export function getNotesUrl(midi, vel) {
-    return `${midiToNote(midi).replace('#', 's')}v${vel}.[mp3|ogg]`;
+    return `${midiToNote(midi).replace('#', 's')}v${vel}.ogg`;
 }
 /**
  * Maps velocity depths to Salamander velocities
